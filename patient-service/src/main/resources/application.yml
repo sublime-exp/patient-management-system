@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: patient-service
+  kafka:
+    producer:
+      key-serializer: "org.apache.kafka.common.serialization.StringSerializer"
+      value-serializer: "org.apache.kafka.common.serialization.ByteArraySerializer"
+
+
+# UNCOMMENT TO USE IN_MEMORY DB
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:testdb
+#    username: admin_viewer
+#    password: password
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+##    database-platform: org.hibernate.dialect.H2Dialect
+#  sql:
+#    init:
+#      mode: always
+#  h2:
+#    console:
+#      path: /h2-console
+
+
+server:
+  port: 4000
+
+logging:
+  level:
+    root: info

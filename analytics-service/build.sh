@@ -1,0 +1,1 @@
+docker build -t analytics-service:latest .

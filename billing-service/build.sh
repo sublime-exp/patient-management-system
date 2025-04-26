@@ -1,0 +1,1 @@
+docker build -t billing-service:latest .
